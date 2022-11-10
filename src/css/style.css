@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  /* Primary */
+  --bg-body-cream: #f2ebe3;
+  --dark-cyan: #3c8067;
+  --very-dark-cyan: #1a4031;
+
+  /* Neutral */
+  --bg-card-white: #ffffff;
+  --dark-grayish-blue: #6c7289;
+  --very-dark-blue: #1c232b;
+}
+
+/*probable dark theme colors*/
+/* .dark {
+  --bg-body-cream: #1a1a1a;
+  --bg-card-white: #2a2a2a;
+  --dark-cyan: #3c8067;
+  --dark-grayish-blue: #7e7e7e;
+  --very-dark-blue: #227c5c;
+  --very-dark-cyan: #1a4031;
+} */
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-body-cream);
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+#card {
+  background-color: var(--bg-card-white);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  width: 655px;
+}
+
+#card img {
+  border-radius: 16px 0 0 16px;
+  width: 50%;
+}
+
+#card .img-product-mobile {
+  display: none;
+}
+
+#card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px;
+}
+
+#card .content h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#card .content h1 {
+  color: var(--very-dark-blue);
+  font-family: "Fraunces", serif;
+  font-size: 37px;
+  line-height: 36px;
+  margin: 24px 0;
+}
+
+#card .content > p {
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+#card .content .product-prices {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  padding-right: 45px;
+}
+
+#card .content .product-prices p:first-child {
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+}
+
+#card .content .product-prices p:last-child {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+#card .content button {
+  align-items: center;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--bg-card-white);
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+}
+
+#card .content button:hover {
+  background-color: var(--very-dark-cyan);
+  transition: 0.3s;
+}
+
+#card .content button img {
+  margin-right: 12px;
+  transform: rotateY(180deg);
+  width: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-grayish-blue);
+}
+
+.attribution a:hover {
+  color: var(--dark-cyan);
+  transition: 0.3s;
+}
+
+@media (max-width: 660px) {
+  #card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #card .img-product-desktop {
+    display: none;
+  }
+
+  #card .img-product-mobile {
+    display: block;
+  }
+
+  #card img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+  }
+
+  #card .content {
+    padding: 18px;
+  }
+
+  #card .content h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 16px 0;
+  }
+
+  #card .content .product-prices {
+    margin: 16px 0;
+  }
+
+  #card .content .product-prices p:first-child {
+    font-size: 30px;
+  }
+}
