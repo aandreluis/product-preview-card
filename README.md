@@ -32,9 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌎 Links
 
-...
-
-- Solution: []()
-- Live Site: []()
+- Solution: [https://www.frontendmentor.io/solutions/product-preview-card-component-html-css-LqdVVozvTg](https://www.frontendmentor.io/solutions/product-preview-card-component-html-css-LqdVVozvTg)
+- Live Site: [https://product-preview-card-aandreluis.netlify.app/](https://product-preview-card-aandreluis.netlify.app/)
 
 ---
