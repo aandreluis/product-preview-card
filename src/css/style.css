@@ -48,14 +48,14 @@ body {
 #card {
   background-color: var(--bg-card-white);
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 655px;
 }
 
 #card img {
   border-radius: 16px 0 0 16px;
-  width: 50%;
+  width: 100%;
 }
 
 #card .img-product-mobile {
@@ -84,7 +84,7 @@ body {
   margin: 24px 0;
 }
 
-#card .content > p {
+#card .content>p {
   line-height: 24px;
   padding-right: 10px;
 }
@@ -150,7 +150,9 @@ body {
 
 @media (max-width: 660px) {
   #card {
+    display: flex;
     flex-direction: column;
+    margin-top: 16px;
     width: 90%;
   }
 
